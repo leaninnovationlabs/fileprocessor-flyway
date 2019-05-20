@@ -1,0 +1,13 @@
+logging:
+  level:
+    ROOT: INFO
+    com.lil.fileprocessor: INFO
+
+spring:
+  application:
+    name : "File Processor IN Dev ENV"
+  datasource:
+    url: jdbc:mysql://localhost:3306/fileprocessor
+    password:
+    username:
+    driver-class-name: "com.mysql.jdbc.Driver"

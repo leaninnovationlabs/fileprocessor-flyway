@@ -1,0 +1,28 @@
+logging:
+  level:
+    ROOT: INFO
+    com.lil.fileprocessor: INFO
+
+spring:
+  application:
+    name : "File Processor"
+  datasource:
+    url: jdbc:mysql://localhost:3306/fileprocessor
+    password:
+    username:
+    driver-class-name: "com.mysql.jdbc.Driver"
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8080
+  servlet:
+    context-path: /fp
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+    min-response-size: 1024
